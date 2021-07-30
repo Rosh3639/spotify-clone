@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Listening is everything - Spotify</title>
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    {% block css %}
+
+    {% endblock %}
+
+</head>
+
+<body>
+    <!-- Start Header Section -->
+    <div class="header">
+        <a href="/" class="logo"><img id="hd" src="{% static 'img/logo.png' %}" alt=""></a>
+        <div class="header-right"></div>
+        <a href="login">Log in</a>
+        <a href="signup">Sign up</a>
+        <a href="">|</a>
+        <a href="https://www.spotify.com/us/download/windows/">Download</a>
+        <a href="https://bit.ly/3y5bbfA">Support</a>
+        <a href="https://www.spotify.com/us/premium/">Premium</a>
+    </div>
+    <!-- End Header Section -->
+    {% block body %}
+
+
+    {% endblock %}
+    <!-- Start Footer Section -->
+    <footer>
+        <div class="footer">
+            <div class="contain">
+
+                <div class="col">
+                    <h1>Company</h1>
+                    <a href="/" class="logo"><img id="foot-img" src="{% static 'img/logo.png' %}" alt=""></a>
+                    <ul>
+                        <a href="/about" style="text-decoration: none;">
+                            <li>About</li>
+                        </a>
+                        <a href="https://bit.ly/3BCVa2H" style="text-decoration: none;">
+                            <li>Jobs</li>
+                        </a>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Communities</h1>
+                    <ul>
+                        <a href="https://bit.ly/36Ywnbk" style="text-decoration: none;">
+                            <li>For Artists</li>
+                        </a>
+                        <a href="https://spoti.fi/3eTJi2x" style="text-decoration: none;">
+                            <li>Developers</li>
+                        </a>
+                        <a href="https://bit.ly/3iCc5d6" style="text-decoration: none;">
+                            <li>Advertising</li>
+                        </a>
+                        <a href="https://bit.ly/3rAT5jo" style="text-decoration: none;">
+                            <li>Investors</li>
+                        </a>
+                        <a href="https://bit.ly/3i1zFRp" style="text-decoration: none;">
+                            <li>Vendors</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Useful Links</h1>
+                    <ul>
+                        <a href="https://bit.ly/3y9wdtO" style="text-decoration: none;">
+                            <li>Support</li>
+                        </a>
+                        <a href="home" style="text-decoration: none;">
+                            <li>Web Player</li>
+                        </a>
+                        <a href="https://spoti.fi/3eU9f2a" style="text-decoration: none;">
+                            <li>Free Mobile App</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-social">
+                    <ul id="social-media">
+                        <a href="https://www.instagram.com/spotify/" style="width: 60px;" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/spotify" style="width: 60px;" class="fa fa-twitter"></a>
+                        <a href="https://www.facebook.com/SpotifyIndia/?brand_redir=6243987495" style="width: 60px;" class="fa fa-facebook"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="usa" style="padding: 1% 1% 0% 82%;color: grey;"><a href="#" style="
+            text-decoration: none;
+            color: gray;
+        ">USA</a></div>
+            <div style="padding: 1% 1% 0% 77%;color: grey;">© 2021 Spotify AB</div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
