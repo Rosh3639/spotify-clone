@@ -6,3 +6,5 @@ It was fun also quite exhausting, most the timee I was finding clues and solving
 
 Btw this app contains 2 types of integrated web players inside home.html and home1.html.
 It still needs lots of improvements!!
+
+I have used tailwind css, bootstrap, vanilla css, python, django framework, html, javascript.
