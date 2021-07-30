@@ -1,6 +1,6 @@
 # spotify-clone
 I have built spotify clone to hone my skills and learn more in depth about how does spotify works in backend. 
-Itt's not exactly spotify but somewhat a music playlist where we can add songs play themm and much more.
+It's not exactly spotify but somewhat a music playlist where we can add songs play themm and much more.
 The web pages which i have built are Login, Sign up, About, Password reset process, home, home1, google authentication etc
 It was fun also quite exhausting, most the timee I was finding clues and solving errors. But finally made something great .
 
