@@ -5,4 +5,4 @@ The web pages which i have built are Login, Sign up, About, Password reset proce
 It was fun also quite exhausting, most the timee I was finding clues and solving errors. But finally made something great .
 
 Btw this app contains 2 types of integrated web players inside home.html and home1.html.
-It still lots of improvements!!
+It still needs lots of improvements!!
