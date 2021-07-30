@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 {% load static %}
+{% load socialaccount %}
+{% providers_media_js %}
+
 
 <head>
     <!-- Required meta tags -->
@@ -32,7 +35,8 @@
 
             <!-- Social Media Login Start -->
             <button class="socialmedia" id="fb1"><a style="text-decoration: none; color: white;" class="trans"
-                    href="/facebook" methods="oauth2">Sign up with Facebook</a></button>
+                    href="{% provider_login_url 'facebook' method='oauth2' %}" methods="oauth2">Sign up with
+                    Facebook</a></button>
             <!-- Social Media Login End -->
 
             <p class="para">
