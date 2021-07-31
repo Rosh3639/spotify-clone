@@ -5,43 +5,29 @@ body {
     /* background: white */
 }
 
+.fom {
+    display: grid;
+    text-align: left;
+    line-height: 50px;
+
+
+}
+
+#sign {
+    margin-left: 27%;
+    border-radius: 54px;
+    width: 40%;
+    border: none;
+    color: white;
+    background-color: #15883e;
+    ;
+}
+
 .py-4 img {
     height: 60px;
     width: 200px;
 }
 
-.yes a {
-    text-decoration: none;
-}
-
-.yes #ea {
-    margin: 0px 0px 1px -152px;
-}
-
-.yes #pd {
-    margin: 1% 1% 0% -73%;
-    padding: 1% -1% 0% -1%;
-}
-
-.yes #fyp {
-    margin: 26px 0px 1px -200px;
-    color: grey;
-    text-decoration: underline;
-}
-
-.yes #checkb {
-    color: grey;
-    font-family: sans-serif;
-    margin: 12% 2% 0% -52%;
-}
-
-.yes {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 .yes h1 {
     color: white;
@@ -49,38 +35,13 @@ body {
     font-weight: 500;
 }
 
-.yes input[type="password"],
-.yes input[type="text"] {
-    display: block;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #222326;
-
-    border: 0;
-    margin: 5px auto;
-    text-align: left;
-    border: 1px solid #d9dadc;
-    padding: 10px 10px;
-    width: 100%;
-    transition: 0.25s;
+#fyp {
+    color: grey;
+    text-decoration: underline;
 }
 
-
-.yes input[type="submit"] {
-    border: 0;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 14px;
-    background: #15883e;
-    display: block;
-    margin: -39px 0px 22px 198px;
-    text-align: center;
-    padding: 10px 60px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
+#fyp:hover {
+    color: #15883e;
 }
 
 #sig {
@@ -88,7 +49,7 @@ body {
     border: 2px solid #616467;
     width: 400px;
     color: #616467;
-    padding: 6px;
+    padding: 10px;
     font-weight: 700;
     font-size: 14px;
     font-family: circular-spotify-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -161,48 +122,24 @@ body {
     color: white;
 }
 
-.mt-5 .separator {
+.separator {
     display: flex;
     align-items: center;
     text-align: center;
+    font-size: 13px;
 }
 
-.mt-5 .separator::before,
-.mt-5 .separator::after {
+.separator::before,
+.separator::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid #d9dadc;
 }
 
-.mt-5 .separator:not(:empty)::before {
+.separator:not(:empty)::before {
     margin-right: .25em;
 }
 
-.mt-5 .separator:not(:empty)::after {
+.separator:not(:empty)::after {
     margin-left: .25em;
-}
-
-.mt-5 .separator1 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.mt-5 .separator1::before,
-.mt-5 .separator1::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #d9dadc;
-}
-
-.mt-5 .separator1:not(:empty)::before {
-    margin-right: .25em;
-}
-
-.mt-5 .separator1:not(:empty)::after {
-    margin-left: .25em;
-}
-
-.mt-5 {
-    margin-top: 7rem !important;
 }

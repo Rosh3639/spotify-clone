@@ -29,9 +29,12 @@
         <!-- HEADER LOGO END-->
 
         <!-- Break line  -->
-        <div class="separator1"></div>
+        <hr>
         <!-- Break line End -->
+
     </div>
+
+
 
     <div class="container text-center" style="max-width: 540px;">
         <b>To continue, log in to Spotify.</b> <br>
@@ -47,46 +50,52 @@
         <a class="trans" href="{% provider_login_url 'google' %}"><button class="socialmedia" id="goog">CONTINUE WITH
                 GOOGLE</button></a>
         <a class="trans" href="/social-authlogin/facebook/"><button class="socialmedia" id="pnum">CONTINUE WITH
-                PHONE NUMBER</button></a>
+                PHONE NUMBER</button></a> <br>
+
+        <div class="separator">OR</div>
+
+        <form class="fom" method="post" action="/signup">
+            {% csrf_token %}
+            {% if messages %}
+            {% for message in messages %}
+            <div style="color:green">
+                <h2>{{ message }}</h2>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+            <!-- Form Inputs Start-->
+
+            <b>Email address or username</b>
+            <input type="email1" name="email" placeholder="Email address or username" required>
+
+            <b>Enter password</b>
+            <input type="password" name="password" placeholder="Enter password" required>
+            <!-- Form Inputs End-->
+            <a id="fyp" href="password_reset">
+                <div>Forgot your password?</div>
+            </a>
+            <div class="mt-3">
+                <label id="checkb">
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+                <input id="sign" type="submit" name="submit" value="LOG IN">
+            </div>
+
+        </form>
+
         <!-- Social Media Login End -->
-    </div><br>
-    <form class="yes mt-5" method="POST" action="/login">
-        {% csrf_token %}
-        {% if messages %}
-        {% for message in messages %}
-        <div style="color:green">
-            <h2 style="text-align: center;">{{ message }}</h2>
-        </div>
-        {% endfor %}
-        {% endif %}
-        <!-- Form Inputs Start-->
-        <div class="separator"><b>OR</b></div>
-
-        <b id="ea">Email address or username</b>
-        <input type="text" name="username" placeholder="Email address or username">
-
-        <b id="pd">Password</b>
-        <input type="password" name="password" placeholder="Password">
-
-        <a href="password_reset" style="text-decoration:none">
-            <div id="fyp">Forgot your password?</div>
-        </a>
-        <label id="checkb">
-            <input type="checkbox" value="remember-me"> Remember me
-        </label>
-
-        <input type="submit" name="submit" value="LOG IN">
 
         <!-- Form Inputs End-->
         <hr>
-    </form>
-
-
-    <div class="py-5 text-center" style="padding-top: 24rem!important;
+        <div class="py-5 text-center" style="padding-top: 2rem!important;
     padding-bottom: 3rem!important; display:grid">
-        <b>Don't have an account?</b><br>
-        <a href="/signup" style="text-decoration: none;"><button id="sig">SIGN UP FOR SPOTIFY</button></a>
+            <b>Don't have an account?</b><br>
+            <a href="/signup" style="text-decoration: none;"><button id="sig">SIGN UP FOR SPOTIFY</button></a>
+        </div>
     </div>
+
+
 
 
 
