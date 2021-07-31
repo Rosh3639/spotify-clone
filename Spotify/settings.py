@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#i3k09r8o8_dzf!ma@5aa$6%qv97!qisy5b2o9wt)i^zm3l&%m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['127.0.0.1', 'https://sklone.herokuapp.com']
@@ -127,7 +127,7 @@ SOCIAL_AUTH_FACEBOOK_KEY = '529297148523070'
 SOCIAL_AUTH_FACEBOOK_SECRET = '1b7e590d02cfd4169f83bf9c23ca8b2b'
 
 LOGIN_URL = '/login'
-LOGOUT_URL = 'logout'
+LOGOUT_URL = '/'
 LOGIN_REDIRECT_URL = '/home1'
 
 # Internationalization
