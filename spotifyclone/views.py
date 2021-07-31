@@ -123,11 +123,16 @@ def send_mail_after_registration(email, auth_token):
 def signup(request):
     if request.method == "POST":
         email = request.POST.get('email')
+        email1 = request.POST.get('email1')
         password = request.POST.get('password')
         username = request.POST.get('username')
 
         try:
             if User.objects.filter(email=email).first():
+                messages.success(request, 'Email is taken')
+                return redirect('/signup')
+
+            if User.objects.filter(email=email1).first():
                 messages.success(request, 'Email is taken')
                 return redirect('/signup')
 

@@ -54,7 +54,7 @@
 
         <div class="separator">OR</div>
 
-        <form class="fom" method="post" action="/signup">
+        <form class="fom" method="post" action="/login">
             {% csrf_token %}
             {% if messages %}
             {% for message in messages %}
@@ -66,8 +66,8 @@
 
             <!-- Form Inputs Start-->
 
-            <b>Email address or username</b>
-            <input type="email1" name="email" placeholder="Email address or username" required>
+            <b>Enter username</b>
+            <input type="text" name="username" placeholder="Enter username" required>
 
             <b>Enter password</b>
             <input type="password" name="password" placeholder="Enter password" required>
@@ -79,9 +79,8 @@
                 <label id="checkb">
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
-                <input id="sign" type="submit" name="submit" value="LOG IN">
             </div>
-
+            <input id="sign" type="submit" name="submit" value="LOG IN">
         </form>
 
         <!-- Social Media Login End -->
