@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: white */
+}
+
+.fom {
+    display: grid;
+    text-align: left;
+    line-height: 50px;
+
+
+}
+
+#sign {
+    margin-left: 27%;
+    border-radius: 54px;
+    width: 40%;
+    border: none;
+    color: white;
+    background-color: #15883e;
+    ;
+}
+
+.py-4 img {
+    height: 60px;
+    width: 200px;
+}
+
+
+.yes h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#fyp {
+    color: grey;
+    text-decoration: underline;
+}
+
+#fyp:hover {
+    color: #15883e;
+}
+
+#sig {
+    border-radius: 50px;
+    border: 2px solid #616467;
+    width: 400px;
+    color: #616467;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: circular-spotify-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+#sig:hover {
+    background-color: grey;
+    color: white;
+}
+
+.container .socialmedia {
+    border: 0;
+    display: block;
+    margin: 2% 0% 2% 2%;
+    text-align: center;
+    padding: 2% 0%;
+    outline: none;
+    width: 100%;
+    color: #616467;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: circular-spotify-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.container .trans {
+    text-decoration: none;
+}
+
+#fb1 {
+    color: #fff;
+    background-color: #3b5998;
+    border: 2px solid #3b5998;
+}
+
+#appl {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid black;
+}
+
+#appl:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+#fb1:hover {
+    background-color: #536ea7;
+}
+
+#pnum {
+    padding: 2% 0%;
+}
+
+#goog {
+    padding: 2% 0%;
+}
+
+#goog,
+#pnum {
+    border: 2px solid grey;
+}
+
+.container #goog:hover,
+.container #pnum:hover {
+    background-color: grey;
+    color: white;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #d9dadc;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
