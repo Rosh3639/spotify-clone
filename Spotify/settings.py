@@ -128,7 +128,7 @@ SOCIAL_AUTH_FACEBOOK_SECRET = '1b7e590d02cfd4169f83bf9c23ca8b2b'
 
 LOGIN_URL = '/login'
 LOGOUT_URL = '/'
-LOGIN_REDIRECT_URL = '/home1'
+LOGIN_REDIRECT_URL = '/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
